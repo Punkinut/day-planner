@@ -1,0 +1,41 @@
+/* Root selector with all my variables */
+:root {
+    --dark-black: #0A0C14;
+    --orange: #D05D61;
+    --white: #FFFFFF;
+}
+
+/* Main styling for the body */
+.main-background {
+    height: 800px;
+    background-color: var(--dark-black);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* A slight grain to make the page feel alive */
+.grain {
+    opacity: 3%;
+    width: 200%;
+    position: relative;
+    animation: move 25s ease infinite;
+}
+
+/* This is what moves the background grain */
+@keyframes move {
+	0% {
+		right: 100px;
+	}
+	50% {
+		right: 300px;
+	}
+	100% {
+		right: 100px;
+	}
+}
+
+/* Just a border class to check on elements */
+border {
+    border: 1px solid black;
+}
+
