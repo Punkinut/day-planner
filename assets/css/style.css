@@ -1,8 +1,43 @@
 /* Root selector with all my variables */
 :root {
+    /* Colors */
     --dark-black: #0A0C14;
     --orange: #D05D61;
     --white: #FFFFFF;
+    /* Font usables */
+    --font: bebas-neue-by-fontfabric, sans-serif;
+    --style: normal;
+}
+
+/* Below is the main font family classes */
+.bebas-neue-thin {
+    font-family: var(--font);
+    font-weight: 100;
+    font-style: var(--style);
+}
+
+.bebas-neue-light {
+    font-family: var(--font);
+    font-weight: 200;
+    font-style: var(--style);
+}
+
+.bebas-neue-book {
+    font-family: var(--font);
+    font-weight: 300;
+    font-style: var(--style);
+}
+
+.bebas-neue-regular {
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: var(--style);
+}
+
+.bebas-neue-bold {
+    font-family: var(--font);
+    font-weight: 700;
+    font-style: var(--style);
 }
 
 /* Main styling for the body */
@@ -11,31 +46,52 @@
     background-color: var(--dark-black);
     overflow-x: hidden;
     overflow-y: hidden;
-}
-
-/* A slight grain to make the page feel alive */
-.grain {
-    opacity: 3%;
-    width: 200%;
-    position: relative;
-    animation: move 25s ease infinite;
-}
-
-/* This is what moves the background grain */
-@keyframes move {
-	0% {
-		right: 100px;
-	}
-	50% {
-		right: 300px;
-	}
-	100% {
-		right: 100px;
-	}
+    color: var(--white);
 }
 
 /* Just a border class to check on elements */
-border {
-    border: 1px solid black;
+.border {
+    border: 1px solid white;
 }
 
+/* Text color orange */
+.orange {
+    color: var(--orange);
+}
+
+/* Styling of the navigation container */
+.navigation {
+    height: 200px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+/* Styling the section element inside the navigation */
+.top-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    transform: rotateX(60deg);
+    letter-spacing: 0.1rem;
+    opacity: 80%;
+}
+
+/* Making sure the text is inline in the navigation */
+.navigation p {
+    display: inline;
+}
+
+/* Styling the x icon in the corner */
+.x {
+    font-size: 16px;
+}
+
+.intro {
+    width: 70%;
+    margin: auto;
+    height: 500px;
+}
