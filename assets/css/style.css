@@ -65,7 +65,7 @@
 
 /* Just a border class to check on elements */
 .border {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.205);
 }
 
 /* Text color orange */
@@ -117,10 +117,13 @@
     font-size: 70px;
 }
 
+.header {
+    margin-bottom: 30px;
+}
 /* Underline effect on header */
 .header:after {    
     background: none repeat scroll 0 0 transparent;
-    bottom: 20;
+    bottom: 10;
     content: "";
     display: block;
     height: 1px;
@@ -142,7 +145,7 @@
    border: 1px solid var(--white);
    background-color: rgba(255, 255, 255, 0);
    padding: 20px 50px;
-   margin-top: 15px;
+   margin-top: 50px;
    color: white;
    transition: all 200ms ease-in-out;
    opacity: 30%;
@@ -176,7 +179,35 @@
  display: inline;
 }
 
+#planner-container {
+    height: 800px;
+    background-color: var(--dark-black);
+    display: flex;
+    color: white;
+}
+
+.table {
+    width: 85%;
+    margin: auto;
+    height: 75%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
 /* Below are media queries */
+
+@media screen and (max-width: 1000px){
+
+    #planner-container {
+        height: 1500px;
+    }
+
+    .table {
+        height: 90%;
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 750px) {
     .intro {
         width: 80%;
@@ -191,5 +222,13 @@
 @media screen and (max-width: 500px) {
     .large-text {
         font-size: 10vw;
+    }
+
+    #planner-container {
+        height: 3000px;
+    }
+
+    .table {
+        grid-template: repeat(8, 1fr) / 100%;
     }
 }

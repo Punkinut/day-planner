@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="img/svg" href="./assets/images/circle.svg">
     <!-- Basic CSS Files & Third Party API'S -->
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <!-- Used Fonts -->
@@ -29,7 +29,7 @@
             <p class="orange large-text header">Day Planner</p>
             <p class="haboro-soft">Keep track of your tasks throughout the day! An app developed for saving and managing your time schedule.</p>
             <p class="haboro-soft">This websites saves your data and updates the time live. </p>
-            <button class="button">Add To Planner</button>
+            <a href="#planner-container" class="scroll"><button class="button">Add To Planner</button></a>
             <section class="bottom-nav">
                 <section class="times">
                     <p class="date"></p>
@@ -39,14 +39,24 @@
         </section>
     </section>
     <main>
-        
+        <section id="planner-container">
+            <section class="table border">
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+                <p class="border"></p>
+            </section>
+        </section>
     </main>
     
     
 <!-- Third party API'S -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="./assets/js/script.js"></script>
