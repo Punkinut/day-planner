@@ -9,7 +9,20 @@
     --style: normal;
 }
 
+::selection {
+    background: rgba(255, 255, 255, 0);
+}
+
 /* Below is the main font family classes */
+
+.haboro-soft {
+    font-family: haboro-soft, sans-serif;
+    font-weight: 200;
+    font-style: var(--style);
+    font-size: 20px;
+    line-height: 2.6rem;
+    opacity: 80%;
+}
 .bebas-neue-thin {
     font-family: var(--font);
     font-weight: 100;
@@ -47,6 +60,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     color: var(--white);
+    cursor: default;
 }
 
 /* Just a border class to check on elements */
@@ -59,6 +73,30 @@
     color: var(--orange);
 }
 
+/* The slight gradient that animates on the page */
+.gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #262829, #f3cada);
+	background-size: 400% 400%;
+    opacity: 10%;
+	animation: gradient 10s ease infinite;
+    z-index: 2;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 /* Styling of the navigation container */
 .navigation {
     height: 200px;
@@ -66,7 +104,6 @@
     margin: auto;
     display: flex;
     align-items: center;
-    cursor: default;
 }
 
 /* Styling the section element inside the navigation */
@@ -87,11 +124,76 @@
 
 /* Styling the x icon in the corner */
 .x {
-    font-size: 16px;
+    font-size: 25px;
 }
 
+/* Dimensions for the introduction */
 .intro {
-    width: 70%;
+    width: 600px;
     margin: auto;
     height: 500px;
+    position: relative;
+    z-index: 5;
+}
+
+/* A universal style for paragraph elements */
+.large-text {
+    font-size: 70px;
+}
+
+/* Underline effect on header */
+.header:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 20;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.603);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  /* Underline effect on header */
+  .header:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* Universal styling for buttons */
+.button {
+   border: 1px solid var(--white);
+   background-color: rgba(255, 255, 255, 0);
+   padding: 20px 50px;
+   margin-top: 15px;
+   color: white;
+   transition: all 200ms ease-in-out;
+   opacity: 30%;
+   letter-spacing: 0.3rem;
+}
+
+/* Buttons when hover */
+.button:hover {
+    border-radius: 50px;
+    border: 1px solid var(--orange);
+    opacity: 80%;
+}
+
+/* Below are media queries */
+@media screen and (max-width: 750px) {
+    .intro {
+        width: 80%;
+    }
+
+    .haboro-soft {
+        font-size: 17px;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .large-text {
+        font-size: 10vw;
+    }
 }
