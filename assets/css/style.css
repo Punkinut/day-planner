@@ -194,6 +194,37 @@
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
 }
 
+.grid-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+}
+
+.grid-box:hover {
+    border: 1px solid var(--orange);
+}
+
+.time-text {
+    opacity: 60%;
+}
+
+.text-box {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    cursor: default;
+}
+
+.task-box {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    letter-spacing: 0.3rem;
+}
+
 /* Below are media queries */
 
 @media screen and (max-width: 1000px){
