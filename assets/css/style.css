@@ -179,6 +179,7 @@
  display: inline;
 }
 
+/* This is the overall dimensions for the planner container */
 #planner-container {
     height: 800px;
     background-color: var(--dark-black);
@@ -186,6 +187,7 @@
     color: white;
 }
 
+/* This is the actual the table */
 .table {
     width: 85%;
     margin: auto;
@@ -206,10 +208,12 @@
     border: 1px solid var(--orange);
 }
 
+/* The text inside the boxes that display the time */
 .time-text {
     opacity: 60%;
 }
 
+/* The larger box the contains all the elements inside the boxes */
 .text-box {
     width: 80%;
     height: 80%;
@@ -217,12 +221,24 @@
     cursor: default;
 }
 
+/* The container of the of the main elements inside the task boxes */
 .task-box {
     height: 60%;
     width: 100%;
     position: absolute;
     bottom: 10px;
     letter-spacing: 0.3rem;
+}
+
+/* This is the design of the text field */
+.input-design {
+    border: none;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.075);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
 }
 
 /* Below are media queries */
