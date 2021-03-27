@@ -13,3 +13,4 @@ anchorList.forEach (function(link) {
         destination.scrollIntoView({behavior: "smooth"});
     });
 })
+
