@@ -211,6 +211,12 @@
 /* The text inside the boxes that display the time */
 .time-text {
     opacity: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-text p {
+    display: inline;
 }
 
 /* The larger box the contains all the elements inside the boxes */
@@ -241,6 +247,7 @@
     padding: 10px;
 }
 
+/* The save icons in the table */
 .save-icon {
     display: block;
     position: relative;
@@ -249,6 +256,14 @@
     width: 20px;
     opacity: 80%;
     cursor: pointer;
+}
+
+.gray-circle,
+.red-circle,
+.green-circle {
+    width: 10px;
+    display: inline;
+    display: none;
 }
 
 .save-icon:hover {
