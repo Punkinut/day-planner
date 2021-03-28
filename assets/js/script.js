@@ -90,3 +90,61 @@ if(hourToInt === 16) {
 } else {
     $(".four-green").css('display', 'block')
 }
+
+
+// Sets the task in local storage when the save button is clicked
+$(".one").on("click", function () {
+    var taskOneInput = $(".input-one").val();
+    localStorage.setItem("task-one", taskOneInput);
+})
+
+$(".input-one").val(localStorage.getItem("task-one"));
+
+$(".two").on("click", function () {
+    var taskTwoInput = $(".input-two").val();
+    localStorage.setItem("task-two", taskTwoInput);
+})
+
+$(".input-two").val(localStorage.getItem("task-two"));
+
+$(".three").on("click", function () {
+    var taskThreeInput = $(".input-three").val();
+    localStorage.setItem("task-three", taskThreeInput);
+})
+
+$(".input-three").val(localStorage.getItem("task-three"));
+
+$(".four").on("click", function () {
+    var taskFourInput = $(".input-four").val();
+    localStorage.setItem("task-four", taskFourInput);
+})
+
+$(".input-four").val(localStorage.getItem("task-four"));
+
+$(".five").on("click", function () {
+    var taskFiveInput = $(".input-five").val();
+    localStorage.setItem("task-five", taskFiveInput);
+})
+
+$(".input-five").val(localStorage.getItem("task-five"));
+
+$(".six").on("click", function () {
+    var taskSixInput = $(".input-six").val();
+    localStorage.setItem("task-six", taskSixInput);
+})
+
+$(".input-six").val(localStorage.getItem("task-six"));
+
+$(".seven").on("click", function () {
+    var taskSevenInput = $(".input-seven").val();
+    localStorage.setItem("task-seven", taskSevenInput);
+})
+
+$(".input-seven").val(localStorage.getItem("task-seven"));
+
+$(".eight").on("click", function () {
+    var taskEightInput = $(".input-eight").val();
+    localStorage.setItem("task-eight", taskEightInput);
+})
+
+$(".input-eight").val(localStorage.getItem("task-eight"));
