@@ -258,16 +258,19 @@
     cursor: pointer;
 }
 
+.save-icon:active {
+    opacity: 100%;
+    left: 11px;
+    top: 42px;
+    width: 17px;
+}
+
 .gray-circle,
 .red-circle,
 .green-circle {
     width: 10px;
     display: inline;
     display: none;
-}
-
-.save-icon:hover {
-    opacity: 100%;
 }
 /* Below are media queries */
 
